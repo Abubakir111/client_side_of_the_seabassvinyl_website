@@ -7,44 +7,37 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="header__container">
-      <div class="header__MenuBurger_block" id="header__MenuBurger_block">
-        <div class="header__MenuBurger_block_container">
-          <img
-            class="header__MenuBurger_block_close_icon"
-            id="header__MenuBurger_block_close_icon"
-            src="./images/closeBurger.svg"
-            alt=""
-          />
+    <header class="header">
+      <div class="header__menu" id="header__menu">
+        <div class="header___Burger-container">
+          <img class="header___menu-icon" id="header___menu-icon" src="./images/closeBurger.svg" alt="" />
         </div>
       </div>
-      <nav class="header__nav-container">
-        <ul class="header__nav-ul">
-          <li class="header__nav-li"><a href="#">SERVICES</a></li>
-          <li class="header__nav-li"><a href="#">VINYL</a></li>
-          <li class="header__nav-li"><a href="#">OUR STORY</a></li>
-          <li class="header__nav-li"><a href="#">PRICING</a></li>
-          <li class="header__nav-li"><a href="#">FAQ</a></li>
+      <nav class="header__navigation">
+        <ul class="header__items">
+          <li class="header__nav-item"><a href="#">SERVICES</a></li>
+          <li class="header__nav-item"><a href="#">VINYL</a></li>
+          <li class="header__nav-item"><a href="#">OUR STORY</a></li>
+          <li class="header__nav-item"><a href="#">PRICING</a></li>
+          <li class="header__nav-item"><a href="#">FAQ</a></li>
         </ul>
       </nav>
-      <div class="header__logo-container">
+      <a href="#">
+        <img class="header__logo" src="./images/logoText.svg" alt="logo" />
+      </a>
+      <div class="header__button-container">
         <a href="#">
-          <img class="header__logo-text" src="./images/logoText.svg" alt="logo" />
-        </a>
-      </div>
-      <div class="header__button-menu-container">
-        <a href="#">
-          <button class="header__button" id="header__button">
-            <div class="header__button_aninamtion" id="header__button_aninamtion"></div>
-            <div class="header__button_text_container">
-              <div class="header__button_text_span">
-                <div>CONTACT</div>
-                <div>CONTACT</div>
+          <button class="block-button" id="block-button">
+            <div class="block-button__aninamtion" id="block-button__aninamtion"></div>
+            <div class="block-button__text-conainer">
+              <div class="block-button__text-span" id="block-button__text-span">
+                <span>CONTACT</span>
+                <span>CONTACT</span>
               </div>
             </div>
           </button>
-          <button class="header__MenuBurger-button" id="header__MenuBurger-button">
-            <img class="header__MenuBurger" src="./images/MenuBurger.svg" alt="MenuBurger" />
+          <button class="header__button-burger" id="header__button-burger">
+            <img class="header__button-burger-icon" src="./images/closeBurger.svg" alt="MenuBurger" />
           </button>
         </a>
       </div>
