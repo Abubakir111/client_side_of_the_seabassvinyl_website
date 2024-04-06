@@ -26,6 +26,7 @@ headerBurgerClickOpen.addEventListener('click', () => {
     }, 500);
   }, 500);
 });
+
 headerMenuBlockClickClose.addEventListener('click', () => {
   setTimeout(() => {
     headerMenuBurgeblock.style = `width: 0%;`;
