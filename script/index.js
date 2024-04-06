@@ -16,15 +16,17 @@ button.addEventListener('mouseout', (e) => {
 
 headerBurgerClickOpen.addEventListener('click', () => {
   headerMenuBurgeblock.style = `width: 100%;`;
-  headerMenuBurgeblock.querySelector('.header__menu-container').style.display = 'block';
   setTimeout(() => {
-    headerMenuBurgeblock.querySelectorAll('.header__menu-nav-itam').forEach((e) => {
-      e.style = ' transition-duration: 1s; transform: translateY(0%); ';
-    });
+    headerMenuBurgeblock.querySelector('.header__menu-container').style.display = 'block';
     setTimeout(() => {
-      document.querySelector('.header__menu-column2').style = 'opacity:1';
-    }, 500);
-  }, 500);
+      headerMenuBurgeblock.querySelectorAll('.header__menu-nav-itam').forEach((e) => {
+        e.style = ' transition-duration: 1s; transform: translateY(0%); ';
+      });
+      setTimeout(() => {
+        document.querySelector('.header__menu-column2').style = 'opacity:1';
+      }, 100);
+    }, 10);
+  }, 1000);
 });
 
 headerMenuBlockClickClose.addEventListener('click', () => {

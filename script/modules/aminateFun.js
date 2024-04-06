@@ -6,7 +6,7 @@ export const Btnanimation = (e, animateBtn, animateBtnText, color) => {
   } else if (e.type === 'mouseout') {
     animateBtn.style = `-webkit-animation: header__button_aninamtion2   ${animateTime}ms; animation: header__button_aninamtion2  ${animateTime}ms; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; background: ${color}`;
     setTimeout(() => {
-      animateBtnText.style = `animation: scroll-text  ${animateTime}ms;`;
+      animateBtnText.style = `-webkit-animation: scroll-text  ${animateTime}ms;  animation: scroll-text  ${animateTime}ms;`;
     }, animateTime);
     setTimeout(() => {
       animateBtnText.style = 'animation: ""';
