@@ -8,14 +8,13 @@
   --btnBgFon: #000000;
   --colorText: #000000;
   --HeroWidth: 800px;
+  --paddingBlock: 60px;
 }
 body {
   width: 100%;
   min-height: 100vh;
   height: 100%;
-  overflow: hidden;
 }
-
 @font-face {
   font-family: 'EurostileNormal';
   src: url('../fonts/EuroStyleNormal.woff2') format('woff2');
@@ -42,7 +41,6 @@ body {
   padding: 15px 2%;
   position: relative;
 }
-
 .header__nav-li,
 .header__MenuBurger,
 .header__logo,
@@ -238,7 +236,6 @@ body {
   width: 17px;
   height: 8px;
 }
-
 .Hero__Button-more-test {
   top: -16px;
   position: absolute;
@@ -250,7 +247,85 @@ body {
 .Hero__Button:hover .Hero__Button-more-test {
   transform: translateY(16px);
 }
+.largeParagraph {
+  padding: var(--paddingBlock);
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+.largeParagraph__row1 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 22px;
+  align-items: center;
+}
+.largeParagraph__graphic {
+  width: 22px;
+  height: 22px;
+}
+.largeParagraph__title {
+  width: 715px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'EurostileBold';
+  line-height: 0.8;
+  color: var(--colorText);
+  font-size: clamp(20px, 6vw, 43px);
+  font-weight: bold;
+}
+.largeParagraph__row2 {
+  display: flex;
+  justify-content: center;
+}
+.largeParagraph__text {
+  width: 715px;
+  text-align: center;
+  font-family: Form Neretta;
+  font-size: clamp(8px, 4vw, 21px);
+}
+.marquee {
+  width: 100%;
+  padding: 20px;
+  background: #ec673d;
+  margin-bottom: 200px;
+  display: flex;
+  overflow: hidden;
+}
+.marquee__wrapp {
+  display: flex;
+}
+.marquee__container {
+  display: flex;
+  animation: marquee_animation 22s linear infinite;
+}
 
+.marquee__contanetn {
+  width: 100%;
+  display: flex;
+  column-gap: 30px;
+  font-family: EurostileBold;
+  align-items: center;
+  justify-content: center;
+  padding-right: 30px;
+}
+.marquee__text {
+  font-size: clamp(40px, 8vw, 120px);
+  white-space: nowrap;
+  color: var(--colorText);
+  font-family: EurostileBold;
+}
+.marquee__icon {
+  width: 70px;
+  height: 70px;
+}
+@keyframes marquee_animation {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 @media screen and (max-width: 850px) {
   :root {
     --HeroWidth: 450px;
@@ -401,6 +476,16 @@ body {
   .Hero__container-img {
     bottom: -225px;
   }
+  .largeParagraph {
+    padding: var(--paddingBlock) 20px;
+  }
+  .largeParagraph__title {
+    width: 100%;
+  }
+  .marquee__icon {
+    width: 55px;
+    height: 55px;
+  }
 }
 @media screen and (max-width: 500px) {
   :root {
@@ -415,5 +500,13 @@ body {
   }
   .Hero__container-img {
     bottom: -160px;
+  }
+  .largeParagraph {
+    padding: var(--paddingBlock) 20px;
+    row-gap: 21px;
+  }
+  .marquee__icon {
+    width: 30px;
+    height: 30px;
   }
 }
