@@ -76,16 +76,20 @@ const swiper = new Swiper('.swiper', {
 });
 
 cardBlockAnimation.forEach((e) => {
-  e.addEventListener('mouseover', () => {
-    const card = e.parentElement.parentElement.parentElement.parentElement;
-    card.querySelector('.block-card__floating-picture').style = 'transform: rotate(-15deg); top: 30px;  opacity: 1;';
-  });
+  if (window.screen.width > 850) {
+    e.addEventListener('mouseover', () => {
+      const card = e.parentElement.parentElement.parentElement.parentElement;
+      card.querySelector('.block-card__floating-picture').style = 'transform: rotate(-15deg); top: 30px;  opacity: 1;';
+    });
+  }
 });
 cardBlockAnimation.forEach((e) => {
-  e.addEventListener('mouseout', () => {
-    const card = e.parentElement.parentElement.parentElement.parentElement;
-    card.querySelector('.block-card__floating-picture').style = 'transform: rotate(0deg);  top: 84px;';
-  });
+  if (window.screen.width > 850) {
+    e.addEventListener('mouseout', () => {
+      const card = e.parentElement.parentElement.parentElement.parentElement;
+      card.querySelector('.block-card__floating-picture').style = 'transform: rotate(0deg);  top: 84px;';
+    });
+  }
 });
 
 // window.addEventListener('scroll', function () {
