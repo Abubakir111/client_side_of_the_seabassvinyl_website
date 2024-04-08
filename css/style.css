@@ -866,6 +866,9 @@ body {
     width: 17px;
     height: 17px;
   }
+  .Hero_logo {
+    padding: 5px 0px;
+  }
   .Hero__container-img {
     bottom: -160px;
   }
