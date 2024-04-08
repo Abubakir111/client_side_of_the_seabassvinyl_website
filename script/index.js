@@ -6,6 +6,15 @@ const headerBurgerClickOpen = document.querySelector('#header__button-burger');
 const headerMenuBurgeblock = document.querySelector('#header__menu');
 const headerMenuBlockClickClose = document.querySelector('#header__menu-icon');
 const cardBlockAnimation = document.querySelectorAll('.block-card__more-btn');
+const media__btn = document.querySelector('#media__btn');
+
+media__btn.addEventListener('mouseover', (e) => {
+  Btnanimation(e, animateBtnHeader, animateBtnHeaderText, '#cf2e2e');
+});
+
+media__btn.addEventListener('mouseout', (e) => {
+  Btnanimation(e, animateBtnHeader, animateBtnHeaderText, '#cf2e2e');
+});
 
 button.addEventListener('mouseover', (e) => {
   Btnanimation(e, animateBtnHeader, animateBtnHeaderText, '#cf2e2e');
