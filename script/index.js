@@ -48,7 +48,7 @@ headerMenuBlockClickClose.addEventListener('click', () => {
 
 const swiper = new Swiper('.swiper', {
   slidesPerView: 3,
-  spaceBetween: 10,
+  spaceBetween: 30,
   direction: 'horizontal',
   loop: true,
   navigation: {
@@ -57,7 +57,7 @@ const swiper = new Swiper('.swiper', {
   },
   breakpoints: {
     850: {
-      slidesPerView: 2,
+      slidesPerView: 3,
       spaceBetween: 20
     },
     664: {
