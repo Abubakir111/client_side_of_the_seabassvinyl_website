@@ -56,19 +56,21 @@ const swiper = new Swiper('.swiper', {
     prevEl: '#slider__btn-left'
   },
   breakpoints: {
-    // when window width is >= 320px
     850: {
-      slidesPerView: 3,
+      slidesPerView: 2,
       spaceBetween: 20
     },
-    // when window width is >= 480px
+    664: {
+      slidesPerView: 1,
+      spaceBetween: 30
+    },
     500: {
       slidesPerView: 2,
       spaceBetween: 30
     },
     200: {
       slidesPerView: 1,
-      spaceBetween: 30
+      spaceBetween: 10
     }
   }
 });
