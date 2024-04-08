@@ -792,7 +792,7 @@ body {
     height: 55px;
   }
   .slider {
-    padding: 106px var(--MobilpaddingBlock) 0px var(--MobilpaddingBlock);
+    padding: 106px var(--MobilpaddingBlock) 50px var(--MobilpaddingBlock);
   }
   .slider__header-container {
     margin-bottom: 71px;
