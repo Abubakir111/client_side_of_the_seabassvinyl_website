@@ -760,6 +760,10 @@ body {
     width: 100% !important;
     height: 400px !important;
   }
+  .block-card {
+    width: 100%;
+    margin: auto;
+  }
   .block-card__more-container {
     row-gap: 10px;
   }
